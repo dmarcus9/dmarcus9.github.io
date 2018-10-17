@@ -1,44 +1,34 @@
-<!-- Create a visualization dashboard website -->
+<!-- Wind Speed visualization page -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <title>Weather Data Landing Page</title>
-  <!-- BELOW LINKS TO BOOTSTRAP css SITE -->
+  <title>Wind Speed visualization</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- BELOW LINKS TO CSS SHEET -->
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-  <!-- The website must, at the top of every page, have a navigation menu that:
-Has the name of the site on the left of the nav which allows users to return to the landing page from any page.
-Contains a dropdown on the right of the navbar named "Plots" which provides links to each individual visualization page.
-Provides two more links on the right: "Comparisons" which links to the comparisons page,
-and "Data" which links to the data page.
-Is responsive (using media queries). The nav must have similar behavior as
-the screenshots "Navigation Menu" section (notice the background color change).
-Be sure to use a CSS media query for the navigation menu. -->
-
   <!-- nav bar from BOOTSTRAP -->
+  <div class="mr-auto">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a id="BigTitle" class="navbar-brand" href="#">&nbsp Lattitude &nbsp</a>
-
-    <!-- button shows up on a small screen -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- collapse when screen gets smaller...nav bar becomes menu icon -->
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <div class="ml-auto">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="DM.index.html">Lattitude</a>
+      <!-- button shows up on a small screen -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- collapse when screen gets smaller...nav bar becomes menu icon -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
+
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
               Plots
+
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="Visualization1.html">Max Temperature</a>
@@ -58,50 +48,51 @@ Be sure to use a CSS media query for the navigation menu. -->
 
         </ul>
       </div>
-    </div>
+    </nav>
 
-  </nav>
-
-
-
-  <!-- A [landing page](#landing-page) containing: * An explanation of the project.
+  </div>
 
   <!-- BOOTSTRAP'S COLUMN GRID SYSTEM -->
-
   <div class="container">
+    <div class="row">
+      <div class="col-md-2.5">
+        <h1>&nbsp Lattitude &nbsp</h1>
+        <br>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-md-8">
 
-        <h2>Summary: Latitude vs. X</h2>
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator.
-          We first pulled data from the OpenWeatherMap API, to assemble a dataset on over 500 cities.</p>
-        <a href="Resources/assets/images/Fig1.png">
-          <img src="Resources/assets/images/Fig1.png" alt="Temperature vs. Latitude" width="400" float: left></a>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-          We considered temperature, cloudiness, wind speed, and humidity.
-          This site provides the source data and the visualizations created as part of the analyses,
-          as well as explanations and descriptions of any trends and correlations obeserved.
-        </p>
+        <h2>Wind Speed</h2>
+        <br><br>
+
+        <a target="_blank" href="Resources/assets/images/Fig4.png">
+          <img src="Resources/assets/images/Fig4.png" alt="Wind Speed vs. Latitude">
+        </a>
+        <p>There does not seem to be a correlation between latitude and wind speed.</p>
+
       </div>
+
       <!-- 4 graphs as a preview and link  -->
       <div class="col-md-4">
         <h3>Visualizations</h3>
         <div id="Previews">
           <!-- id called in css file -->
 
-          <a href="Visualization1.html">
+          <a target="_blank" href="Resources/assets/images/Fig1.png">
             <img src="Resources/assets/images/Fig1.png" alt="Temperature vs. Latitude">
           </a>
 
-          <a href="Visualization2.html">
+          <a target="_blank" href="Resources/assets/images/Fig2.png">
             <img src="Resources/assets/images/Fig2.png" alt="Humidity vs. Latitude">
           </a>
 
-          <a href="Visualization3.html">
+          <a target="_blank" href="Resources/assets/images/Fig3.png">
             <img src="Resources/assets/images/Fig3.png" alt="Cloudiness vs. Latitude">
           </a>
 
-          <a href="Visualization4.html">
+          <a target="_blank" href="Resources/assets/images/Fig4.png">
             <img src="Resources/assets/images/Fig4.png" alt="Wind Speed vs. Latitude">
           </a>
 
@@ -111,8 +102,7 @@ Be sure to use a CSS media query for the navigation menu. -->
   </div>
 
   <!-- large screen...small screen ???
-
-Be sure your website works at all window widths/sizes. -->
+  Be sure your website works at all window widths/sizes. -->
 
   <!-- bootstrap's required javascript connection, with nav bar from bootstrap at top, and created the nav bar -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -122,7 +112,3 @@ Be sure your website works at all window widths/sizes. -->
 </body>
 
 </html>
-
-<!-- Finally, the website must be deployed to GitHub pages.
-
-When finished, submit to BootcampSpot the links to 1) the deployed app and 2) the GitHub repository. -->
