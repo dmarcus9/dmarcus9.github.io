@@ -10,31 +10,28 @@ A paragraph describing the plot and its significance. -->
 <head>
   <meta charset="utf-8">
   <title>Max.Temp visualization</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
   <!-- nav bar from BOOTSTRAP -->
-  <div class="mr-auto">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="DM.index.html">Lattitude</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a id="BigTitle" class="navbar-brand" href="index.html">&nbsp Lattitude &nbsp</a>
 
-      <!-- button shows up on a small screen -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- collapse when screen gets smaller...nav bar becomes menu icon -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <!-- button shows up on a small screen -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- collapse when screen gets smaller...nav bar becomes menu icon -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="ml-auto">
+
         <ul class="navbar-nav">
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
               Plots
-
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="Visualization1.html">Max Temperature</a>
@@ -54,35 +51,24 @@ A paragraph describing the plot and its significance. -->
 
         </ul>
       </div>
-    </nav>
-
-  </div>
+    </div>
+  </nav>
 
   <!-- BOOTSTRAP'S COLUMN GRID SYSTEM -->
 
   <div class="container">
     <div class="row">
-      <div class="col-md-2.5">
-        <h1>&nbsp Lattitude &nbsp</h1>
-        <br>
-      </div>
-    </div>
-
-    <div class="row">
       <div class="col-md-8">
 
         <h2>Max Temperature</h2>
         <br><br>
-        <a target="_blank" href="Resources/assets/images/Fig1.png">
-          <img src="Resources/assets/images/Fig1.png" alt="Temperature vs. Latitude" width="400" float: left></a>
-
-        <!-- an example using figure/ficaption from 1.7 wind map...? -->
+        <a href="Visualization1.html">
+          <img src="Resources/assets/images/Fig1.png" alt="Temperature vs. Latitude" width="600" float: left></a>
 
         <p>In the scatterplot above, we can see what the temperature is like as we approach the equator...
           it gets hotter, as expected.
           We can also see (perhaps not as clearly) that it is summer in the Southern Hemisphere
           at the time the data was collected (January). This is due to the tilt of the earth on its axis.</p>
-
       </div>
 
       <!-- 4 graphs as a preview and link  -->
@@ -91,19 +77,19 @@ A paragraph describing the plot and its significance. -->
         <div id="Previews">
           <!-- id called in css file -->
 
-          <a target="_blank" href="Resources/assets/images/Fig1.png">
+          <a href="Visualization1.html">
             <img src="Resources/assets/images/Fig1.png" alt="Temperature vs. Latitude">
           </a>
 
-          <a target="_blank" href="Resources/assets/images/Fig2.png">
+          <a href="Visualization2.html">
             <img src="Resources/assets/images/Fig2.png" alt="Humidity vs. Latitude">
           </a>
 
-          <a target="_blank" href="Resources/assets/images/Fig3.png">
+          <a href="Visualization3.html">
             <img src="Resources/assets/images/Fig3.png" alt="Cloudiness vs. Latitude">
           </a>
 
-          <a target="_blank" href="Resources/assets/images/Fig4.png">
+          <a href="Visualization4.html">
             <img src="Resources/assets/images/Fig4.png" alt="Wind Speed vs. Latitude">
           </a>
 
@@ -112,8 +98,7 @@ A paragraph describing the plot and its significance. -->
     </div>
   </div>
 
-  <!-- large screen...small screen ???
-Be sure your website works at all window widths/sizes. -->
+  <!-- large screen...small screen  Be sure your website works at all window widths/sizes. -->
 
   <!-- bootstrap's required javascript connection, with nav bar from bootstrap at top, and created the nav bar -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
